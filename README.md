@@ -1,2 +1,2 @@
-# calculadora_opensurce_python
+# calculadora_opensource_python
 Crearemos una calculadora Open Source con múltiples funciones matemáticas.

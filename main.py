@@ -28,3 +28,6 @@ while True:
     elif opcion == 3:
         resultado = dividir_n_numeros()
         print(f'El resultado de tu divisón es {resultado}')
+
+print('------------------------------------------------------')
+print('Bye, gracias por usar mi calculadora')

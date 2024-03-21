@@ -38,5 +38,12 @@ def dividir_n_numeros():
 
     return resultado
 
-        
+# Y = mx + b 
+def resolver_para_y():
+    pendiente = float(input('Por favor ingresa la pendiente: '))
+    ordenada_origen = float(input('Por favor ingrese la ordenada al origen: '))
+    punto_x = int(input('Ingrese un punto en x: '))
+
+    return ( pendiente * punto_x) + ordenada_origen
+
 

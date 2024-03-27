@@ -1,4 +1,6 @@
 from funciones_calculadora import *
+
+#Importamos librerías para poder graficar
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -32,9 +34,24 @@ while True:
         resultado = dividir_n_numeros()
         print(f'El resultado de tu divisón es {resultado}')
 
+    # y = mx + b
     elif opcion == 4:
+             
         resultado = resolver_para_y()
         print(f'El resultado es: {resultado}')
+
+        x = np.linspace(-10,10)
+        y = resultado['pendiente'] * x + resultado['ordenada_origen']
+
+        fig, ax = plt.subplots()
+
+        ax.plot(x, y, linewidth=2.0)
+        ax.plot(resultado['punto_x'], resultado['resultado'], 'yo')
+
+        ax.grid(True, linestyle='-')
+        
+
+        plt.show()
 
 print('------------------------------------------------------')
 print('Bye Bye, gracias por usar mi calculadora')
